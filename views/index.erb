@@ -1,0 +1,23 @@
+
+<div style='border: 3px dashed red'>
+  <% if !@name %>
+  <h1>
+    My name is cat
+  </h1>
+  <% else %>
+  <h1>
+    My name is <%= @name %>
+  </h1>
+
+  <% end %>
+  <img src='http://bit.ly/1eze8aE'>
+</div>
+<div>
+  <% if !@name %>
+  <form action="/named-cat">
+     <input type="text" value="name">
+     <input type="submit" value="Submit">
+  </form>
+  <% end %>
+
+</div>
